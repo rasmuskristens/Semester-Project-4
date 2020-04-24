@@ -6,10 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane layoutX="-73.0" layoutY="-6.0" prefHeight="704.0" prefWidth="1086.0">
+      <AnchorPane layoutX="-73.0" layoutY="-6.0" prefHeight="704.0" prefWidth="1086.0" style="-fx-background-color: lightblue;">
          <children>
             <Button fx:id="Exit2" layoutX="1025.0" layoutY="31.0" mnemonicParsing="false" text="X" />
             <Button fx:id="SignUp2" layoutX="693.0" layoutY="352.0" mnemonicParsing="false" text="Sign Up" />
@@ -41,12 +40,15 @@
             <TextField fx:id="UserCreateText" layoutX="442.0" layoutY="247.0" prefHeight="31.0" prefWidth="324.0" />
             <TextField fx:id="PasswordCreateText" layoutX="442.0" layoutY="306.0" prefHeight="31.0" prefWidth="324.0" />
             <Label layoutX="543.0" layoutY="552.0" text="If you already have a user, click here" />
-            <Label layoutX="481.0" layoutY="391.0" text="Username already exists!" textFill="#f50909">
+            <Label fx:id="Exists" layoutX="481.0" layoutY="391.0" text="Username already exists!" textFill="#f50909">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="412.0" layoutY="391.0" text="Sign Up Successful, please return to log in page" textFill="#11d71b" />
+            <Label fx:id="Successful" layoutX="412.0" layoutY="391.0" text="Sign Up Successful, please return to log in page" textFill="#11d71b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
          </children>
       </AnchorPane>
    </children>
