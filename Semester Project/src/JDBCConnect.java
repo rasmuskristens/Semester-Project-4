@@ -7,9 +7,10 @@ public class JDBCConnect {
 	
 	public void connect(String host, int portNo, String userName, String password) {
 		// Establishing a PostgreSQL database connection
-		String databaseUrl = "jdbc:postgresql://" + host + ":" + portNo + "/" + userName;
-
-		try {
+		String databaseUrl = "jdbc:postgresql://" + "wejponay:LusSGW0u3UrElFlBhNAzu_1s4Yxs91p7@balarama.db.elephantsql.com" + ":" + 5432 + "/" + "wejponay";
+		//added the url from the sever created on Elephant
+		try 
+		{
 			connection = DriverManager.getConnection(databaseUrl, userName, password);
 			//System.out.println("Connection established to: " + databaseUrl);
 		} 
